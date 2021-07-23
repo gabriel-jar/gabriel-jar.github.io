@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- map stylesheet and map script -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>IP Address Tracker</h1>
+      <form action="" class="inputForm">
+        <input
+          class="ipInput"
+          type="text"
+          name="ipAddressSearch"
+          id="ipAddressSearch"
+          placeholder="Search for any IP address"
+        /><button id="ipAddressSearchBtn" class="button">
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+      <!-- <div></div> -->
+    </header>
+    <div class="infoContainer">
+      <div>
+        <label for="ipAddress">ip address</label>
+        <span id="ipAddress">FIRST INFO</span>
+      </div>
+      <div>
+        <label for="locationText">location</label>
+        <span id="locationText">SECOND INFO</span>
+      </div>
+      <div>
+        <label for="timezone">timezone</label>
+        <span id="timezone">THIRD INFO</span>
+      </div>
+      <div id="lastOne">
+        <label for="isp">isp</label> <span id="isp">FOURTH INFO</span>
+      </div>
+    </div>
+    <div class="mapContainer"><div id="mapid"></div></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gabriel Jaros</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
