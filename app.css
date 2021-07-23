@@ -64,6 +64,9 @@ span {
   font-size: 17px;
   font-weight: 600;
 }
+#isp{
+  margin-bottom: 1rem;
+}
 header {
   position: fixed;
   width: 100%;
