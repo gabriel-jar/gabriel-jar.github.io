@@ -1,6 +1,6 @@
 const mymap = L.map("mapid").setView([51.505, -0.09], 13);
 const myIcon = L.icon({
-  iconUrl: "./images/icon-location.svg",
+  iconUrl: "icon-location.svg",
 
   iconSize: [46, 56],
   iconAnchor: [23, 56],
